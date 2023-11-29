@@ -243,6 +243,7 @@
      ((node-is ",") parent 0)
      ((parent-is "sequencing_expr") parent 0)
      ((parent-is "or_pat") parent -2)
+     ((parent-is "funapp_expr") parent mcore-indent-level)
      ((parent-is "all_type") parent-bol mcore-indent-level)
      ((parent-is "lam_expr") parent-bol mcore-indent-level)
      ((query "(_ \"->\" _ @match)") parent-bol mcore-indent-level)
